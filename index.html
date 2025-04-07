@@ -2,34 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Student Marks Table</title>
+  <title>Change Heading Text</title>
 </head>
 <body>
 
-  <h2>Student Marks</h2>
+  <h1 id="myHeading">Welcome to My Website</h1>
+  <button onclick="changeText()">Change Heading</button>
 
-  <table border="1">
-    <tr>
-      <th>Student Name</th>
-      <th>Subject</th>
-      <th>Marks</th>
-    </tr>
-    <tr>
-      <td>Alice</td>
-      <td>Mathematics</td>
-      <td>95</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>Science</td>
-      <td>88</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>English</td>
-      <td>91</td>
-    </tr>
-  </table>
+  <script>
+    function changeText() {
+      document.getElementById("myHeading").innerText = "Thanks for Visiting!";
+    }
+  </script>
 
 </body>
 </html>
